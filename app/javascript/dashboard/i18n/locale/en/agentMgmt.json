@@ -22,7 +22,7 @@
       "AVAILABLE_CUSTOM_ROLE": "Available custom role permissions"
     },
     "ADD": {
-      "TITLE": "Add agent to your team",
+      "TITLE": "Add an agent to your team",
       "DESC": "You can add people who will be able to handle support for your inboxes.",
       "CANCEL_BUTTON_TEXT": "Cancel",
       "FORM": {
