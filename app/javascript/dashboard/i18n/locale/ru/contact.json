@@ -17,6 +17,11 @@
     "IP_ADDRESS": "IP адрес",
     "CREATED_AT_LABEL": "Создан",
     "NEW_MESSAGE": "Новое сообщение",
+    "CALL": "Вызов",
+    "CALL_UNDER_DEVELOPMENT": "Calling is under development",
+    "VOICE_INBOX_PICKER": {
+      "TITLE": "Choose a voice inbox"
+    },
     "CONVERSATIONS": {
       "NO_RECORDS_FOUND": "Нет предыдущих диалогов, связанных с этим контактом.",
       "TITLE": "Предыдущие диалоги"
@@ -266,7 +271,7 @@
       "ATTRIBUTE_WARNING": "Контактная информация <strong>{primaryContactName}</strong> будет скопирована в <strong>{parentContactName}</strong>."
     },
     "SEARCH": {
-      "ERROR": "ERROR_MESSAGE"
+      "ERROR_MESSAGE": "Что-то пошло не так. Пожалуйста, попробуйте позже."
     },
     "FORM": {
       "SUBMIT": " Объединить контакты",
@@ -285,9 +290,12 @@
     "HEADER": {
       "TITLE": "Контакты",
       "SEARCH_TITLE": "Поиск контактов",
+      "ACTIVE_TITLE": "Активные контакты",
       "SEARCH_PLACEHOLDER": "Поиск...",
       "MESSAGE_BUTTON": "Сообщение",
       "SEND_MESSAGE": "Отправить сообщение",
+      "BLOCK_CONTACT": "Заблокировать контакт",
+      "UNBLOCK_CONTACT": "Разблокировать контакт",
       "BREADCRUMB": {
         "CONTACTS": "Контакты"
       },
@@ -302,6 +310,10 @@
           "SUCCESS_MESSAGE": "Контакт успешно сохранен",
           "ERROR_MESSAGE": "Не удалось сохранить контакт. Пожалуйста, повторите попытку позже."
         },
+        "BLOCK_SUCCESS_MESSAGE": "Этот контакт успешно заблокирован",
+        "BLOCK_ERROR_MESSAGE": "Не удается заблокировать контакт. Пожалуйста, повторите попытку позже.",
+        "UNBLOCK_SUCCESS_MESSAGE": "Этот контакт успешно разблокирован",
+        "UNBLOCK_ERROR_MESSAGE": "Не удается разблокировать контакт. Пожалуйста, повторите попытку позже.",
         "IMPORT_CONTACT": {
           "TITLE": "Импорт контактов",
           "DESCRIPTION": "Импорт контактов из CSV-файла.",
@@ -451,6 +463,10 @@
             "PLACEHOLDER": "Добавить Twitter"
           }
         }
+      },
+      "DELETE_CONTACT": {
+        "MESSAGE": "Это действие необратимо.",
+        "BUTTON": "Удалить"
       }
     },
     "DETAILS": {
@@ -460,7 +476,7 @@
       "DELETE_CONTACT": "Удалить контакт",
       "DELETE_DIALOG": {
         "TITLE": "Подтвердите удаление",
-        "DESCRIPTION": "Вы уверены, что хотите удалить этот контакт {contactName}?",
+        "DESCRIPTION": "Are you sure you want to delete this contact?",
         "CONFIRM": "Да, удалить",
         "API": {
           "SUCCESS_MESSAGE": "Кампания успешно удалена",
@@ -538,6 +554,9 @@
         "WROTE": "написал",
         "YOU": "Вы",
         "SAVE": "Сохранить заметку",
+        "EXPAND": "Развернуть",
+        "COLLAPSE": "Свернуть",
+        "NO_NOTES": "No notes, you can add notes from the contact details page.",
         "EMPTY_STATE": "Нет заметок, связанных с этим контактом. Вы можете добавить заметку в поле выше."
       }
     },
@@ -546,7 +565,8 @@
       "SUBTITLE": "Начните добавлять новые контакты, нажав на кнопку ниже",
       "BUTTON_LABEL": "Добавить контакт",
       "SEARCH_EMPTY_STATE_TITLE": "Нет контактов по вашему запросу 🔍",
-      "LIST_EMPTY_STATE_TITLE": "Нет контактов в этом виде 📋"
+      "LIST_EMPTY_STATE_TITLE": "Нет контактов в этом виде 📋",
+      "ACTIVE_EMPTY_STATE_TITLE": "No contacts are active at the moment 🌙"
     }
   },
   "COMPOSE_NEW_CONVERSATION": {
@@ -557,7 +577,7 @@
       "GO_TO_CONVERSATION": "Просмотр",
       "SUCCESS_MESSAGE": "Сообщение успешно отправлено!",
       "ERROR_MESSAGE": "Произошла ошибка при создании диалога. Пожалуйста, повторите попытку позже.",
-      "NO_INBOX_ALERT": "Нет доступных \"входящих\" для начала разговора с этим контактом.",
+      "NO_INBOX_ALERT": "Нет доступных входящих для начала разговора с этим контактом.",
       "CONTACT_SELECTOR": {
         "LABEL": "Кому:",
         "TAG_INPUT_PLACEHOLDER": "Поиск контакта с именем, email или номером телефона",
@@ -586,6 +606,15 @@
         "TEMPLATE_PARSER": {
           "TEMPLATE_NAME": "Шаблон WhatsApp: {templateName}",
           "VARIABLES": "Переменные",
+          "BACK": "Вернуться",
+          "SEND_MESSAGE": "Отправить сообщение"
+        }
+      },
+      "TWILIO_OPTIONS": {
+        "LABEL": "Выбрать шаблон",
+        "SEARCH_PLACEHOLDER": "Поиск шаблонов",
+        "EMPTY_STATE": "Шаблоны не найдены",
+        "TEMPLATE_PARSER": {
           "BACK": "Вернуться",
           "SEND_MESSAGE": "Отправить сообщение"
         }

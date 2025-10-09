@@ -17,6 +17,11 @@
     "IP_ADDRESS": "IP 位置",
     "CREATED_AT_LABEL": "Created",
     "NEW_MESSAGE": "新訊息",
+    "CALL": "Call",
+    "CALL_UNDER_DEVELOPMENT": "Calling is under development",
+    "VOICE_INBOX_PICKER": {
+      "TITLE": "Choose a voice inbox"
+    },
     "CONVERSATIONS": {
       "NO_RECORDS_FOUND": "此聯絡人没有關聯到以前的對話。",
       "TITLE": "上一次對話"
@@ -266,7 +271,7 @@
       "ATTRIBUTE_WARNING": "Contact details of <strong>{primaryContactName}</strong> will be copied to <strong>{parentContactName}</strong>."
     },
     "SEARCH": {
-      "ERROR": "ERROR_MESSAGE"
+      "ERROR_MESSAGE": "Something went wrong. Please try again later."
     },
     "FORM": {
       "SUBMIT": " 合併聯絡人",
@@ -285,9 +290,12 @@
     "HEADER": {
       "TITLE": "聯絡人",
       "SEARCH_TITLE": "Search contacts",
+      "ACTIVE_TITLE": "Active contacts",
       "SEARCH_PLACEHOLDER": "Search...",
       "MESSAGE_BUTTON": "訊息",
       "SEND_MESSAGE": "傳送訊息",
+      "BLOCK_CONTACT": "Block contact",
+      "UNBLOCK_CONTACT": "Unblock contact",
       "BREADCRUMB": {
         "CONTACTS": "聯絡人"
       },
@@ -302,6 +310,10 @@
           "SUCCESS_MESSAGE": "聯絡人儲存成功",
           "ERROR_MESSAGE": "Unable to save contact. Please try again later."
         },
+        "BLOCK_SUCCESS_MESSAGE": "This contact is blocked successfully",
+        "BLOCK_ERROR_MESSAGE": "Unable to block contact. Please try again later.",
+        "UNBLOCK_SUCCESS_MESSAGE": "This contact is unblocked successfully",
+        "UNBLOCK_ERROR_MESSAGE": "Unable to unblock contact. Please try again later.",
         "IMPORT_CONTACT": {
           "TITLE": "Import contacts",
           "DESCRIPTION": "透過 CSV 匯入聯絡人",
@@ -451,6 +463,10 @@
             "PLACEHOLDER": "Add Twitter"
           }
         }
+      },
+      "DELETE_CONTACT": {
+        "MESSAGE": "This action is permanent and irreversible.",
+        "BUTTON": "Delete now"
       }
     },
     "DETAILS": {
@@ -460,7 +476,7 @@
       "DELETE_CONTACT": "刪除聯絡人",
       "DELETE_DIALOG": {
         "TITLE": "確認刪除",
-        "DESCRIPTION": "Are you sure you want to delete this {contactName} contact?",
+        "DESCRIPTION": "Are you sure you want to delete this contact?",
         "CONFIRM": "是，刪除",
         "API": {
           "SUCCESS_MESSAGE": "聯絡人刪除成功",
@@ -538,6 +554,9 @@
         "WROTE": "wrote",
         "YOU": "You",
         "SAVE": "Save note",
+        "EXPAND": "Expand",
+        "COLLAPSE": "Collapse",
+        "NO_NOTES": "No notes, you can add notes from the contact details page.",
         "EMPTY_STATE": "There are no notes associated to this contact. You can add a note by typing in the box above."
       }
     },
@@ -546,7 +565,8 @@
       "SUBTITLE": "Start adding new contacts by clicking on the button below",
       "BUTTON_LABEL": "Add contact",
       "SEARCH_EMPTY_STATE_TITLE": "找不到符合條件的聯絡人 🔍",
-      "LIST_EMPTY_STATE_TITLE": "No contacts available in this view 📋"
+      "LIST_EMPTY_STATE_TITLE": "No contacts available in this view 📋",
+      "ACTIVE_EMPTY_STATE_TITLE": "No contacts are active at the moment 🌙"
     }
   },
   "COMPOSE_NEW_CONVERSATION": {
@@ -586,6 +606,15 @@
         "TEMPLATE_PARSER": {
           "TEMPLATE_NAME": "WhatsApp template: {templateName}",
           "VARIABLES": "Variables",
+          "BACK": "返回",
+          "SEND_MESSAGE": "傳送訊息"
+        }
+      },
+      "TWILIO_OPTIONS": {
+        "LABEL": "Select template",
+        "SEARCH_PLACEHOLDER": "Search templates",
+        "EMPTY_STATE": "No templates found",
+        "TEMPLATE_PARSER": {
           "BACK": "返回",
           "SEND_MESSAGE": "傳送訊息"
         }
